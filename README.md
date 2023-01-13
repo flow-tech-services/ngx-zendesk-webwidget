@@ -1,8 +1,7 @@
 # ngx-zendesk-webwidget
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/75bc5877b3bf6939fe44/maintainability)](https://codeclimate.com/github/AlisonVilela/ngx-zendesk-webwidget/maintainability)
-[![Build Status](https://travis-ci.org/AlisonVilela/ngx-zendesk-webwidget.svg?branch=master)](https://travis-ci.org/AlisonVilela/ngx-zendesk-webwidget)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/AlisonVilela/ngx-zendesk-webwidget/issues)
+⚠️ This is a cloned copy of the repo from [nitsan](https://github.com/flow-tech-services/ngx-zendesk-webwidget), who in turn cloned it from [Alison](https://github.com/AlisonVilela/ngx-zendesk-webwidget), it seems the original creator has abandoned the project. Maintenance / useability for this package is not gauranteed, as we will likely seek other solutions for implementing the widget.
+
 
 Zendesk-Webwidget for Angular 2+
 
@@ -160,7 +159,7 @@ export class app {
       name: 'Fulano de Tal',
       email: 'your_user_email@email.com'
     });
-  
+
     this._NgxZendeskWebwidgetService.zE('webWidget', 'prefill', {
         name: {
         value: 'Fulano de Tal',
@@ -171,10 +170,10 @@ export class app {
         readOnly: true
       }
     });
-  
+
     this._NgxZendeskWebwidgetService.zE('webWidget', 'show');
   }
-  
+
   logout() {
     this._NgxZendeskWebwidgetService.zE('webWidget', 'hide');
   }
